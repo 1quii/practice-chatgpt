@@ -1,15 +1,36 @@
-mensaje="Hello, World!"
+# Ejercicio 1
+nombre ="Me llamo Antonio"
+edad="Tengo 30 años"
+altura="Mido 1.60 metros"
 
-print(mensaje)
+print(nombre)
+print(edad) 
+print(altura)
 
-mensaje="""esto es un mensaje
-multilinea
-con varias lineas"""
-print(mensaje)
+# Ejercicio 2
+masa=75
+velocidad=20
 
-numero1=10
-numero2=20
-if numero1>numero2:
-    print("numero1 es mayor que numero2")
+Ec= (masa * velocidad**2) / 2
+print("La energia cinetica es:", Ec)
+
+# Ejercicio 3
+nota=float(input("Ingrese la nota del estudiante: "))
+if nota >= 5:
+    print("Aprobado")
 else:
-    print("numero2 es mayor que numero1")
+    print("Suspenso")
+
+#Ejercicio 4
+nota1=int(input("Ingrese una nota: "))
+nota2=int(input("Ingrese otra nota: "))
+nota3=int(input("Ingrese una tercera nota: "))
+promedio=(nota1 + nota2 + nota3) / 3
+if promedio >= 9:
+    print("Excelente")
+elif promedio >= 7 and promedio < 9:
+    print("Notable")
+elif promedio >= 5 and promedio < 7:
+    print("Aprobado")
+else:
+    print("Suspenso")
