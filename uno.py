@@ -34,3 +34,24 @@ elif promedio >= 5 and promedio < 7:
     print("Aprobado")
 else:
     print("Suspenso")
+
+#Ejercicio 5
+for i in range(1, 11):
+    print(i)
+
+#Ejercicio 6
+def energetic_energy(mass, velocity):
+    return (mass * velocity**2) / 2
+
+m1,m2,m3,m4,m5=input("Ingrese 5 masas separadas por comas: ").split(",")
+v1,v2,v3,v4,v5=input("Ingrese 5 velocidades separadas por comas: ").split(",")
+
+masses = [float(m1), float(m2), float(m3), float(m4), float(m5)]
+velocities = [float(v1), float(v2), float(v3), float(v4), float(v5)]
+
+for i in range(5):
+    energy = energetic_energy(masses[i], velocities[i])
+    print(f"La energía cinética del objeto {i+1} es: {energy}")
+
+#Ejercicio 7
+
